@@ -1,0 +1,35 @@
+site_name: 运维笔记
+site_url: https://zhumeishuai.github.io
+theme:
+  name: material
+  language: zh
+  palette:
+    # 深色模式
+    scheme: slate
+    # 强调色
+    accent: red
+    # 标题颜色
+    primary: black
+  font:
+    # 全文字体和代码块字体
+    text: 'JetBrains Mono'
+    code: 'JetBrains Mono'
+  features:
+    - toc.follow
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    # 返回顶部
+    - navigation.top
+    # 代码块复制
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
